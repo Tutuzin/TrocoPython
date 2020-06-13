@@ -1,9 +1,8 @@
 troco = 188.9
-psv = {100:n100,50:n50,20:n20,10:n10,5:n5,2:n2,1:n1,0.5:n05,0.25:n02,0.10:n01,0.5:m05}
+psv = (100,50,20,10,5,2,1,0.5,0.25,0.1,0.05)
 print('O troco é')
-for vlr, qntd in psv.items():
+for vlr in psv:
     qntd = int(troco / vlr)
     troco = troco - qntd*vlr
     print(' {} notas de R${}'.format(qntd,vlr))
-print(troco)
-
+print('{:.2f}'.format(troco))
