@@ -23,9 +23,9 @@ def calculotroco(troco):
                     meio = 'nota'
                 if qntd == 1:
                     plural = ''
-                print(' {} {}{} de R${}'.format(qntd,meio,plural,vlr))
-                if troco < 0.05:
-                    break
+                print(' {} {}{} de R${:.2f}'.format(qntd,meio,plural,vlr))
+            if troco < 0.05:
+                break
 #    print('{:.2f}'.format(troco))
 rpt = 'y'
 while rpt == 'y':
